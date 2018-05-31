@@ -1,0 +1,1024 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Popular Mechanics</title>
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="author1" content="UX/UI Design, CSS, HTML, JS - Darian Steyn">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Open+Sans:400,600" rel="stylesheet">
+    <link rel="icon" type="img/ico" href="img/pmFav.ico">
+
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body class="index">
+    <div class="header-bg col-12">
+        <div class="nav-wrap col-12">
+            <a href="index.html">
+                <img class="logo" src="img/pmLogo.png">
+            </a>
+
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="howTo">How To</a>
+                    <ul class="sub-menu">
+                        <li class="sub-item make">
+                            <a href="#" class="sub-link">How To Make</a>
+                        </li>
+
+                        <li class="sub-item master">
+                            <a href="#" class="sub-link">How To Master</a>
+                        </li>
+
+                        <li class="sub-item fix">
+                            <a href="#" class="sub-link">How To Fix</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="science">Science</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="tech">Tech</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="stuff">Stuff</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="wheels">Wheels</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="test">Test</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link" id="videos">Videos</a>
+                </li>
+
+            </ul>
+
+            <div class="search-wrap">
+                <input type="checkbox" id="searchInput">
+                <label id="search" for="searchInput" class="social-icon"></label>
+                <div class="search-container" id="searchCont">
+                    <input type="text" id="searchText" autofocus="autofocus">
+                </div>
+            </div>
+            
+            <a id="articleCancel" href="#">Cancel</a>
+        </div>
+        <!--END OF NAV WRAP-->
+
+        <div id="mobileMenu">
+            <input type="checkbox" id="mobileMenuInput">
+            <label for="mobileMenuInput" id="menuLabel"></label>
+
+            <div id="menuContent">
+
+                <label for="mobileMenuInput" id="closeMenu">X</label>
+
+                <img class="mobile-logo" src="img/pmLogo.png">
+
+                <ul class="mobile-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="howTo">How To</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item make">
+                                <a href="#" class="sub-link">How To Make</a>
+                            </li>
+
+                            <li class="sub-item master">
+                                <a href="#" class="sub-link">How To Master</a>
+                            </li>
+
+                            <li class="sub-item fix">
+                                <a href="#" class="sub-link">How To Fix</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="science">Science</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="tech">Tech</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="stuff">Stuff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="wheels">Wheels</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="test">Test</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="videos">Videos</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-wrap">
+
+        <div class="full-col col-12">
+            <div class="top-carousel">
+
+                <div class="grid col-9 post" id="main-article">
+                    <a class="post-pop" href="#"></a>
+                    <figure class="effect-lily">
+                        <img src="img/science1.jpg" alt="img12" />
+                        <figcaption>
+                            <a class="articleLink" href="#" onclick="getArticleInfo(this)" data-img="img/science1.jpg"></a>
+                            <div>
+                                <h2>Secret "Zone 52" Testing and what to know</h2>
+                                <p id="words" class="words">Scott Evans</p>
+                                <p id="photos" class="photos">Jade Nelson</p>
+                                <p id="date">April 11, 2017</p>
+                            </div>
+                            <span class="lrg category science" id="lrg-cat">Science</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="right-grid col-3" id="right-grid">
+                    <div class="block-1 post video col-12">
+                        <span class="video-ico"></span>
+                        <img src="img/science2.jpg">
+                        <div class="block-desc-bg"></div>
+
+                        <span class="category science">Science</span>
+                        <a class="articleLink" href="#" onclick="getArticleInfo(this)" data-img="img/science2.jpg"></a>
+                        <div class="block-desc">
+                            <h2 class="block-heading">Thermonuclear Reactors: How They Work</h2>
+                        </div>
+                    </div>
+
+                    <div class="block-1 post col-12">
+
+                        <img src="img/howTo1.jpg">
+                        <div class="block-desc-bg"></div>
+
+                        <span class="category how-to">How To</span>
+                        <a class="articleLink" href="#" onclick="getArticleInfo(this)" data-img="img/howTo1.jpg"></a>
+                        <div class="block-desc">
+                            <h2 class="block-heading">All you need to know about Nitrogen</h2>
+                        </div>
+                            
+                    </div>
+
+                </div>
+
+            </div>
+            <!--END OF TOP CAROUSEL-->
+
+            <div class="left-col col-9">
+                <div class="std-grid col-12">
+                    <div class="std-grid-block post col-3">
+                        <img src="img/tech1.jpg">
+                        <div class="block-desc-bg"></div>
+
+                        <span class="category tech">Tech</span>
+                        <a class="articleLink" href="#" onclick="getArticleInfo(this)" data-img="img/tech1.jpg"></a>
+                        <div class="block-desc">
+                            <h2 class="block-heading">The Future of Hyperloop</h2>
+                            <p class="block-ex">The hyperloop is now active.</p>
+                            <a href="#" class="std-grid-view">View More</a>
+                            <ul class="share-list">
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="faceShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="twitShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="gooShare"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="std-grid-block post col-3">
+                        <img src="img/wheels1.JPG">
+                        <div class="block-desc-bg"></div>
+
+                        <span class="category wheels">Wheel</span>
+                        <div class="block-desc">
+                            <h2 class="block-heading">Ford's Frontier</h2>
+                            <p class="block-ex">Ford is breaking its boundries</p>
+                            <a href="#" class="std-grid-view">View More</a>
+                            <ul class="share-list">
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="faceShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="twitShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="gooShare"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="std-grid-block post col-3">
+                        <img src="img/stuff1.jpg">
+                        <div class="block-desc-bg"></div>
+
+                        <span class="category stuff">Stuff</span>
+                        <div class="block-desc">
+                            <h2 class="block-heading">The Hurricanes of 2017</h2>
+                            <p class="block-ex">The science behind the chaos</p>
+                            <a href="#" class="std-grid-view">View More</a>
+                            <ul class="share-list">
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="faceShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="twitShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="gooShare"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!--END OF STANDARD GRID 1-->
+
+                <div class="std-grid col-12">
+                    <div class="std-grid-block post col-3">
+                        <img src="img/stuff2.png">
+                        <div class="block-desc-bg"></div>
+
+                        <span class="category how-to">HOW TO</span>
+                        <div class="block-desc">
+                            <h2 class="block-heading">Sweet Vs Molten Metal</h2>
+                            <p class="block-ex">Know the difference.</p>
+                            <a href="#" class="std-grid-view">View More</a>
+                            <ul class="share-list">
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="faceShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="twitShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="gooShare"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="std-grid-block post col-3">
+                        <img src="img/wheels2.JPG">
+                        <div class="block-desc-bg"></div>
+
+                        <span class="category stuff">Stuff</span>
+                        <div class="block-desc">
+                            <h2 class="block-heading">The Buggy of The Future</h2>
+                            <p class="block-ex">For all your apocolypse needs.</p>
+                            <a href="#" class="std-grid-view">View More</a>
+                            <ul class="share-list">
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="faceShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="twitShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="gooShare"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="std-grid-block post col-3 last-block">
+                        <img src="img/video2.jpg">
+                        <div class="block-desc-bg"></div>
+
+                        <span class="category test">Test</span>
+                        <div class="block-desc">
+                            <h2 class="block-heading">Testing the new 50 Cal Sniper</h2>
+                            <p class="block-ex">Breaking down it's power</p>
+                            <a href="#" class="std-grid-view">View More</a>
+                            <ul class="share-list">
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="faceShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="twitShare"></a>
+                                </li>
+
+                                <li class="share-item">
+                                    <a class="share-link" href="#" id="gooShare"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <!--END OF STANDARD GRID 2-->
+            </div>
+            <!--END OF LEFT COL-->
+
+            <div class="right-col col-3">
+
+                <div class="tstories-shared-wrap">
+                    <ul class="tstories-shared-head">
+                        <li class="top-stories">
+                            <input type="checkbox" id="top-stories" class="sidebar-option">
+                            <label for="top-stories" class="tstories-shared-btn">Top Stories</label>
+
+                            <div class="top-stories-cont">
+                                <ul id="top-stories-list">
+                                    <li class="tstories-item">
+                                        <img class="top-img" src="img/darwin.jpg">
+                                        <p class="tstories-text">Darwin's main work will go under the hammer</p>
+                                        <p class="tstories-time">Yesterday 12:00</p>
+                                        <span class="category science">
+                                            <span class="spacer"></span>
+                                            <span class="cat-text top">Science</span>
+                                        </span>
+                                    </li>
+
+                                    <li class="tstories-item">
+                                        <img class="top-img" src="img/diamondStructure.png">
+                                        <p class="tstories-text">Random title about technology stuff</p>
+                                        <p class="tstories-time">Sunday 11:23</p>
+                                        <span class="category tech">
+                                            <span class="spacer"></span>
+                                            <span class="cat-text top">Tech</span>
+                                        </span>
+                                    </li>
+
+                                    <li class="tstories-item">
+                                        <img class="top-img" src="img/dog.jpg">
+                                        <p class="tstories-text">Look at the weather today, it's nice</p>
+                                        <p class="tstories-time">Sunday 10:15</p>
+                                        <span class="category stuff">
+                                            <span class="spacer"></span>
+                                            <span class="cat-text top">Stuff</span>
+                                        </span>
+                                    </li>
+
+                                    <li class="tstories-item">
+                                        <img class="top-img" src="img/phoneback.jpg">
+                                        <p class="tstories-text">Breaking news about stuff!</p>
+                                        <p class="tstories-time">Monday 14:48</p>
+                                        <span class="category how-to">
+                                            <span class="spacer"></span>
+                                            <span class="cat-text top">How To</span>
+                                        </span>
+                                    </li>
+
+                                    <li class="tstories-item">
+                                        <img class="top-img" src="img/windowsPhone.jpg">
+                                        <p class="tstories-text">Breaking news about stuff!</p>
+                                        <p class="tstories-time">Tuesday 18:30</p>
+                                        <span class="category how-to">
+                                            <span class="spacer"></span>
+                                            <span class="cat-text top">How To</span>
+                                        </span>
+                                    </li>
+                                </ul>
+
+                                <button id="moreNews">More News</button>
+                            </div>
+                        </li>
+                        <li class="most-shared">
+                            <input type="checkbox" id="most-shared" class="sidebar-option">
+                            <label for="most-shared" class="tstories-shared-btn">Most Shared</label>
+
+                            <div class="most-shared-cont">
+                                <ul id="most-shared-list">
+                                    <li class="tstories-item">
+                                        <p>A title to check most shared!</p>
+                                        <span class="category how-to">
+                                            <span class="spacer"></span>
+                                            <span class="cat-text">How To</span>
+                                        </span>
+                                    </li>
+
+                                    <li class="tstories-item">
+                                        <p>Random title about technology stuff</p>
+                                        <span class="category tech">
+                                            <span class="spacer"></span>
+                                            <span class="cat-text">Tech</span>
+                                        </span>
+                                    </li>
+
+                                    <li class="tstories-item">
+                                        <p>Another technology title which has text</p>
+                                        <span class="category tech">
+                                            <span class="spacer"></span>
+                                            <span class="cat-text">Tech</span>
+                                        </span>
+                                    </li>
+
+                                    <li class="tstories-item">
+                                        <p>Breaking news about stuff!</p>
+                                        <span class="category science">
+                                            <span class="spacer"></span>
+                                            <span class="cat-text">Science</span>
+                                        </span>
+                                    </li>
+
+                                    <li class="tstories-item">
+                                        <p>Travel the world today</p>
+                                        <span class="category wheels">
+                                            <span class="spacer"></span>
+                                            <span class="cat-text">Wheels</span>
+                                        </span>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- END OF RIGHT COL -->
+        </div>
+        <!--END OF FULL COL-->
+
+        <div class="slider-grid col-12">
+            <div class="col-12 video">
+                <a href="#" class="slider-link">
+                    <span class="video-ico"></span>
+                    <span class="category stuff">Stuff</span>
+
+                    <div class="img-container">
+                        <img src="img/science1.jpg">
+                    </div>
+
+                    <h2 class="block-heading">The World is changing. More Rockets</h2>
+                    <p class="slider-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed felis elementum, scelerisque sem et, lacinia sapien.
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-12">
+                <a href="#" class="slider-link">
+                    <span class="category how-to">How To</span>
+                    <div class="img-container">
+                        <img src="img/video2.jpg">
+                    </div>
+                    <h2 class="block-heading">Shooting a 50 Cal in Slow Mo</h2>
+                    <p class="slider-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed felis elementum, scelerisque sem et, lacinia sapien.
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-12">
+                <a href="#" class="slider-link">
+                    <span class="category tech">Tech</span>
+                    <div class="img-container">
+                        <img src="img/science2.jpg">
+                    </div>
+                    <h2 class="block-heading">A thermonuclear reactor working</h2>
+                    <p class="slider-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed felis elementum, scelerisque sem et, lacinia sapien. Aenean
+                        gravida pulvinar convallis.
+                    </p>
+                </a>
+            </div>
+
+
+            <div class="col-12">
+                <a href="#" class="slider-link">
+                    <span class="category tech">Tech</span>
+                    <div class="img-container">
+                        <img src="img/wheels2.jpg">
+                    </div>
+                    <h2 class="block-heading">This dune buggy is tough as nails</h2>
+                    <p class="slider-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed felis elementum, scelerisque sem et, lacinia sapien. Aenean
+                        gravida pulvinar convallis.
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-12">
+                <a href="#" class="slider-link">
+                    <span class="category tech">Tech</span>
+                    <div class="img-container">
+                        <img src="img/wheels1.jpg">
+                    </div>
+                    <h2 class="block-heading">This dune buggy is tough as nails</h2>
+                    <p class="slider-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed felis elementum, scelerisque sem et, lacinia sapien. Aenean
+                        gravida pulvinar convallis.
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-12">
+                <a href="#" class="slider-link">
+                    <span class="category tech">Tech</span>
+                    <div class="img-container">
+                        <img src="img/tech2.jpg">
+                    </div>
+                    <h2 class="block-heading">This dune buggy is tough as nails</h2>
+                    <p class="slider-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed felis elementum, scelerisque sem et, lacinia sapien. Aenean
+                        gravida pulvinar convallis.
+                    </p>
+                </a>
+            </div>
+        </div>
+        <!--END OF SLIDER GRID-->
+
+        <div class="left-col col-9">
+            <div class="std-grid col-12">
+                <div class="std-grid-block post col-3">
+                    <img src="img/tech1.jpg">
+                    <div class="block-desc-bg"></div>
+
+                    <span class="category tech">Tech</span>
+                    <div class="block-desc">
+                        <h2 class="block-heading">The Future of Hyperloop</h2>
+                        <p class="block-ex">The hyperloop is now active.</p>
+                        <a href="#" class="std-grid-view">View More</a>
+                        <ul class="share-list">
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="faceShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="twitShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="gooShare"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="std-grid-block post col-3">
+                    <img src="img/wheels1.JPG">
+                    <div class="block-desc-bg"></div>
+
+                    <span class="category wheels">Wheel</span>
+                    <div class="block-desc">
+                        <h2 class="block-heading">Ford's Frontier</h2>
+                        <p class="block-ex">Ford is breaking its boundries</p>
+                        <a href="#" class="std-grid-view">View More</a>
+                        <ul class="share-list">
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="faceShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="twitShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="gooShare"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="std-grid-block post col-3">
+                    <img src="img/stuff1.jpg">
+                    <div class="block-desc-bg"></div>
+
+                    <span class="category stuff">Stuff</span>
+                    <div class="block-desc">
+                        <h2 class="block-heading">The Hurricanes of 2017</h2>
+                        <p class="block-ex">The science behind the chaos</p>
+                        <a href="#" class="std-grid-view">View More</a>
+                        <ul class="share-list">
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="faceShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="twitShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="gooShare"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!--END OF STANDARD GRID 1-->
+
+            <div class="std-grid col-12">
+                <div class="std-grid-block post col-3">
+                    <img src="img/stuff2.png">
+                    <div class="block-desc-bg"></div>
+
+                    <span class="category how-to">HOW TO</span>
+                    <div class="block-desc">
+                        <h2 class="block-heading">Sweet Vs Molten Metal</h2>
+                        <p class="block-ex">Know the difference.</p>
+                        <a href="#" class="std-grid-view">View More</a>
+                        <ul class="share-list">
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="faceShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="twitShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="gooShare"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="std-grid-block post col-3">
+                    <img src="img/wheels2.JPG">
+                    <div class="block-desc-bg"></div>
+
+                    <span class="category stuff">Stuff</span>
+                    <div class="block-desc">
+                        <h2 class="block-heading">The Buggy of The Future</h2>
+                        <p class="block-ex">For all your apocolypse needs.</p>
+                        <a href="#" class="std-grid-view">View More</a>
+                        <ul class="share-list">
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="faceShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="twitShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="gooShare"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="std-grid-block post col-3 last-block">
+                    <img src="img/video2.jpg">
+                    <div class="block-desc-bg"></div>
+
+                    <span class="category test">Test</span>
+                    <div class="block-desc">
+                        <h2 class="block-heading">Testing the new 50 Cal Sniper</h2>
+                        <p class="block-ex">Breaking down it's power</p>
+                        <a href="#" class="std-grid-view">View More</a>
+                        <ul class="share-list">
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="faceShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="twitShare"></a>
+                            </li>
+
+                            <li class="share-item">
+                                <a class="share-link" href="#" id="gooShare"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!--END OF STANDARD GRID 2-->
+        </div>
+        <!--END OF LEFT COL 2-->
+
+        <div class="right-col col-3">
+            <div class="latestContainer">
+                <p class="latestText">Latest Issue : </p>
+                <span id="issueDate">December 2017</span>
+                <img class="latestImg" src="img/currentIssueDecember.jpg">
+            </div>
+        </div>
+        <!-- END OF RIGHT COL 2-->
+
+        <div class="footer-wrap col-12">
+            <div class="footer-nav-wrap nav-wrap col-8">
+                <div class="footer-nav-bot">
+                    <ul>
+                        <li class="extra-info-li">
+                            <span>Information</span>
+                            <ul>
+                                <li>Breaking</li>
+                                <li>National</li>
+                                <li>Worldwide</li>
+                                <li>General</li>
+                            </ul>
+                        </li>
+
+                        <li class="extra-info-li">
+                            <span>Partners</span>
+                            <ul>
+                                <li>Soccer</li>
+                                <li>Cricket</li>
+                                <li>Rugby</li>
+                                <li>Golf</li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-footer-wrap col-4">
+                <img src="img/pmLogo.png" class="logo2">
+                <p>Connect With Us!</p>
+                <ul>
+                    <li>
+                        <span id="face" class="social-icon"></span>
+                    </li>
+
+                    <li>
+                        <span id="insta" class="social-icon"></span>
+                    </li>
+
+                    <li>
+                        <span id="twit" class="social-icon"></span>
+                    </li>
+
+                    <li>
+                        <span id="you" class="social-icon"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--SCROLL TO TOP-->
+        <span class="scroll-top" id="scroll-top"></span>
+
+    </div>
+    <!--END OF CONTENT WRAP-->
+
+    <!-- ARTICLE OVERLAY -->
+    <div id="articleOverlay">
+        <div class="content-wrap">
+
+            <div class="article-header col-12">
+                <span id="articleHeadOverlay"></span>
+        
+                <img id="headerImg" src="img/science3.jpg">
+        
+                <div class="article-head-info">
+                    <span class="category science">
+                        <span class="cat-text">Science</span>
+                    </span>
+                    <h1 class="article-heading">The Boson Reactor</h1>
+                    <p class="article-head-desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis sit amet sapien quis elementum. Sed nec ante sed augue consectetur dapibus.              
+                    </p>
+                </div>
+            </div>
+    
+            <div class="full-col col-12">
+    
+                <div class="left-col col-9">
+    
+                    <div class="article-content col-12" id="articleCont">
+                        <p id="topPara" class="article-text">
+                            When the Space Shuttle program was officially closed on July 21, 2011, not only the era of manned orbital shuttles ended, but in a sense the whole era of "winged romance", known for many attempts to make from the plane more than just an airplane. Early experiments with the installation of a rocket engine on a winged vehicle date back to the late 1920s. The rocket was also the X-1 (1947) - the first ever manned aircraft that overcame the speed of sound. Its fuselage was in the form of an enlarged machine gun bullet of 12.7 mm caliber, and the rocket engine burned ordinary alcohol in its chamber with the help of liquid oxygen.
+                        </p>
+    
+                        <div class="article-img-wrap col-12">
+                            <img class="article-img" src="img/articleImg1.jpg">
+                            <p class="img-caption">Random caption for the image above.</p>
+                        </div>
+    
+                        <p class="article-text">
+                            When the Space Shuttle program was officially closed on July 21, 2011, not only the era of manned orbital shuttles ended, but in a sense the whole era of "winged romance", known for many attempts to make from the plane more than just an airplane. Early experiments with the installation of a rocket engine on a winged vehicle date back to the late 1920s. The rocket was also the X-1 (1947) - the first ever manned aircraft that overcame the speed of sound. Its fuselage was in the form of an enlarged machine gun bullet of 12.7 mm caliber, and the rocket engine burned ordinary alcohol in its chamber with the help of liquid oxygen.
+                        </p>
+    
+                        <p class="article-text">
+                            When the Space Shuttle program was officially closed on July 21, 2011, not only the era of manned orbital shuttles ended, but in a sense the whole era of "winged romance", known for many attempts to make from the plane more than just an airplane. Early experiments with the installation of a rocket engine on a winged vehicle date back to the late 1920s. The rocket was also the X-1 (1947) - the first ever manned aircraft that overcame the speed of sound. Its fuselage was in the form of an enlarged machine gun bullet of 12.7 mm caliber, and the rocket engine burned ordinary alcohol in its chamber with the help of liquid oxygen.
+                        </p>
+    
+                        <div class="article-img-wrap col-12">
+                            <img class="article-img" src="img/articleImg2.jpg">
+                            <p class="img-caption">A different caption for variation.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="right-col col-3">
+    
+                    <div class="tstories-shared-wrap">
+                        <ul class="tstories-shared-head">
+                            <li class="top-stories">
+                                <input type="checkbox" id="top-stories" class="sidebar-option">
+                                <label for="top-stories" class="tstories-shared-btn">Top Stories</label>
+    
+                                <div class="top-stories-cont">
+                                    <ul id="top-stories-list">
+                                        <li class="tstories-item">
+                                            <img class="top-img" src="img/darwin.jpg">
+                                            <p class="tstories-text">Darwin's main work will go under the hammer</p>
+                                            <p class="tstories-time">Yesterday 12:00</p>
+                                            <span class="category science">
+                                                <span class="spacer"></span>
+                                                <span class="cat-text">Science</span>
+                                            </span>
+                                        </li>
+    
+                                        <li class="tstories-item">
+                                            <img class="top-img" src="img/diamondStructure.png">
+                                            <p class="tstories-text">Random title about technology stuff</p>
+                                            <p class="tstories-time">Sunday 11:23</p>
+                                            <span class="category tech">
+                                                <span class="spacer"></span>
+                                                <span class="cat-text">Tech</span>
+                                            </span>
+                                        </li>
+    
+                                        <li class="tstories-item">
+                                            <img class="top-img" src="img/dog.jpg">
+                                            <p class="tstories-text">Look at the weather today, it's nice</p>
+                                            <p class="tstories-time">Sunday 10:15</p>
+                                            <span class="category stuff">
+                                                <span class="spacer"></span>
+                                                <span class="cat-text">Stuff</span>
+                                            </span>
+                                        </li>
+    
+                                        <li class="tstories-item">
+                                            <img class="top-img" src="img/phoneback.jpg">
+                                            <p class="tstories-text">Breaking news about stuff!</p>
+                                            <p class="tstories-time">Monday 14:48</p>
+                                            <span class="category how-to">
+                                                <span class="spacer"></span>
+                                                <span class="cat-text">How To</span>
+                                            </span>
+                                        </li>
+    
+                                        <li class="tstories-item">
+                                            <img class="top-img" src="img/windowsPhone.jpg">
+                                            <p class="tstories-text">Breaking news about stuff!</p>
+                                            <p class="tstories-time">Tuesday 18:30</p>
+                                            <span class="category how-to">
+                                                <span class="spacer"></span>
+                                                <span class="cat-text">How To</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+    
+                                    <button id="moreNews">More News</button>
+                                </div>
+                            </li>
+                            <li class="most-shared">
+                                <input type="checkbox" id="most-shared" class="sidebar-option">
+                                <label for="most-shared" class="tstories-shared-btn">Most Shared</label>
+    
+                                <div class="most-shared-cont">
+                                    <ul id="most-shared-list">
+                                        <li class="tstories-item">
+                                            <p>A title to check most shared!</p>
+                                            <span class="category how-to">
+                                                <span class="spacer"></span>
+                                                <span class="cat-text">How To</span>
+                                            </span>
+                                        </li>
+    
+                                        <li class="tstories-item">
+                                            <p>Random title about technology stuff</p>
+                                            <span class="category tech">
+                                                <span class="spacer"></span>
+                                                <span class="cat-text">Tech</span>
+                                            </span>
+                                        </li>
+    
+                                        <li class="tstories-item">
+                                            <p>Another technology title which has text</p>
+                                            <span class="category tech">
+                                                <span class="spacer"></span>
+                                                <span class="cat-text">Tech</span>
+                                            </span>
+                                        </li>
+    
+                                        <li class="tstories-item">
+                                            <p>Breaking news about stuff!</p>
+                                            <span class="category science">
+                                                <span class="spacer"></span>
+                                                <span class="cat-text">Science</span>
+                                            </span>
+                                        </li>
+    
+                                        <li class="tstories-item">
+                                            <p>Travel the world today</p>
+                                            <span class="category wheels">
+                                                <span class="spacer"></span>
+                                                <span class="cat-text">Wheels</span>
+                                            </span>
+                                        </li>
+    
+    
+                                    </ul>
+                                </div>
+    
+                            </li>
+                        </ul>
+                    </div>
+    
+                </div>
+                <!-- END OF RIGHT COL -->
+            </div>
+            <!--END OF FULL COL-->
+    
+            <div class="footer-wrap col-12">
+                <div class="footer-nav-wrap nav-wrap col-8">
+                    <div class="footer-nav-bot">
+                        <ul>
+                            <li class="extra-info-li">
+                                <span>Information</span>
+                                <ul>
+                                    <li>Breaking</li>
+                                    <li>National</li>
+                                    <li>Worldwide</li>
+                                    <li>General</li>
+                                </ul>
+                            </li>
+    
+                            <li class="extra-info-li">
+                                <span>Partners</span>
+                                <ul>
+                                    <li>Soccer</li>
+                                    <li>Cricket</li>
+                                    <li>Rugby</li>
+                                    <li>Golf</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="social-footer-wrap col-4">
+                    <img src="img/pmLogo.png" class="logo2">
+                    <p>Connect With Us!</p>
+                    <ul>
+                        <li>
+                            <span id="face" class="social-icon"></span>
+                        </li>
+    
+                        <li>
+                            <span id="insta" class="social-icon"></span>
+                        </li>
+    
+                        <li>
+                            <span id="twit" class="social-icon"></span>
+                        </li>
+    
+                        <li>
+                            <span id="you" class="social-icon"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!--SCROLL TO TOP-->
+            <span class="scroll-top" id="scroll-top"></span>
+    
+        </div>
+        <!--END OF CONTENT WRAP-->
+    </div>
+
+    <!--SCRIPTS-->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
