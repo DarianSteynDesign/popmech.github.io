@@ -3001,6 +3001,7 @@ $('#articleCancel').click(function () {
 function openArticle(){
     $('#articleOverlay').toggleClass('active');
     $('#articleCancel').toggleClass('active');
+    $('body').toggleClass('article');
 }
 
 function getArticleInfo(id){
