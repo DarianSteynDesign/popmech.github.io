@@ -101,7 +101,7 @@ input[type="checkbox"]{
 
 .content-wrap {
     position: relative;
-    top: 130px;
+    top: 100px;
     max-width: 1140px;
     display: block;
     margin: 0 auto;
@@ -647,6 +647,22 @@ figure.effect-lily:hover .category {
     text-align:center;
 }
 
+#articleOverlay .category{
+        font-family: 'Poppins', sans-serif;
+        padding: 0 13px;
+        color: white;
+        position: absolute;
+        top: -20px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        width: 80px;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        display: table-cell;
+        vertical-align: middle;
+}
+
 .category.lrg {
     padding: 7px 14px;
     position: absolute;
@@ -1076,7 +1092,6 @@ label[for="most-shared"]:after{
 span.cat-text{
     margin: 0;
     position: relative;
-    top: 13px;
     vertical-align: middle;
     display: inline-block;
 }
@@ -2014,15 +2029,21 @@ ul.mobile-nav {
 
 #articleCancel{
     position: absolute;
-    right: 60px;
-    top: 10px;
     opacity: 0;
     z-index: -1;
+    font-size: 2em;
+    color: #333;
+    top: 3px;
+    right: 70px;
 }
 
 #articleCancel.active{
     opacity: 1;
     z-index: 6;
+}
+
+#articleOverlay.active .content-wrap{
+    top: 70px;
 }
 
 .articleLink{
